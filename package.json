@@ -1,0 +1,29 @@
+{
+  "name": "my-rn-payment",
+  "version": "1.0.1",
+  "description": "payment module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ads"
+  ],
+  "author": "Quan Trinh Van",
+  "license": "Quan Trinh Van",
+  "nativePackage": true,
+  "dependencies": {},
+  "devDependencies": {
+    "my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
+    "my-rn-base-utils": "git+https://gitlab.com/react-native-my-libs/my-rn-base-utils.git",
+    "react-native-login": "git+https://gitlab.com/react-native-my-libs/react-native-login.git",
+    "my-rn-common-resource": "git+https://gitlab.com/react-native-my-libs/my-rn-common-resource.git"
+  },
+  "peerDependencies": {
+    "my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
+    "my-rn-base-utils": "git+https://gitlab.com/react-native-my-libs/my-rn-base-utils.git",
+    "react-native-login": "git+https://gitlab.com/react-native-my-libs/react-native-login.git",
+    "my-rn-common-resource": "git+https://gitlab.com/react-native-my-libs/my-rn-common-resource.git"
+  }
+}

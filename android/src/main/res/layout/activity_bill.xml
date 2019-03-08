@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/root"
+             android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--style="@style/tv_content_large_black"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/spacing_normal"-->
+            <!--android:text="Beta test Feature"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--style="@style/tv_content_normal_gray"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/spacing_normal"-->
+            <!--android:text="Tính năng dùng thử, chỉ có những khách hàng được mời mới có thể sử dụng. Bạn vui lòng chờ trong vài ngày nữa tính năng sẽ được phát hành"/>-->
+    <!--</LinearLayout>-->
+</FrameLayout>
