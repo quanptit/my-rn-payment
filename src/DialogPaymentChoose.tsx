@@ -8,7 +8,7 @@ import {getStringsCommon} from "my-rn-common-resource";
 
 interface Props {
     callbackUpdateVip?: () => void
-    iosBundleID?: string
+    iosBundleID: string
     IAP_LICENSE_KEY: string
 }
 
