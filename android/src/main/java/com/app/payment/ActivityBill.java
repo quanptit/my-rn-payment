@@ -18,6 +18,7 @@ public class ActivityBill extends Activity implements BillingProcessor.IBillingH
     private BillingProcessor bp;
 
     public static void openActivity(Activity activity, int requestCode, String productId, String IAP_LICENSE_KEY) {
+        L.d("ActivityBill: productId = " + productId + " , IAP_LICENSE_KEY: " + IAP_LICENSE_KEY);
         boolean isAvailable = BillingProcessor.isIabServiceAvailable(activity);
         if (!isAvailable) {
             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
