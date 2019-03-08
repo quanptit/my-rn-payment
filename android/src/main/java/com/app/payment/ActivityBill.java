@@ -11,7 +11,6 @@ import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.Constants;
 import com.anjlab.android.iab.v3.TransactionDetails;
 import com.baseLibs.utils.L;
-import com.payment.R;
 
 
 public class ActivityBill extends Activity implements BillingProcessor.IBillingHandler {
