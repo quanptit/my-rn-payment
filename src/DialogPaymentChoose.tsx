@@ -100,7 +100,7 @@ export class DialogPaymentChoose extends Component<Props> {
         this.popupDialog.dismiss()
     }
 
-    public static showDialog(props?: Props) {
+    public static showDialog(props: Props) {
         DialogUtils.showDialog(<DialogPaymentChoose {...props}/>)
     }
 

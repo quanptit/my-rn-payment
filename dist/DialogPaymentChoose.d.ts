@@ -14,6 +14,6 @@ export declare class DialogPaymentChoose extends Component<Props> {
     render(): JSX.Element;
     show(onShowed?: any): void;
     dismiss(onDismissed?: any): void;
-    static showDialog(props?: Props): void;
+    static showDialog(props: Props): void;
 }
 export {};
