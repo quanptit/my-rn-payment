@@ -21,9 +21,5 @@
     "my-rn-common-resource": "git+https://gitlab.com/react-native-my-libs/my-rn-common-resource.git"
   },
   "peerDependencies": {
-    "my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
-    "my-rn-base-utils": "git+https://gitlab.com/react-native-my-libs/my-rn-base-utils.git",
-    "react-native-login": "git+https://gitlab.com/react-native-my-libs/react-native-login.git",
-    "my-rn-common-resource": "git+https://gitlab.com/react-native-my-libs/my-rn-common-resource.git"
   }
 }
