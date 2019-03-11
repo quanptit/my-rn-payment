@@ -1,5 +1,5 @@
 import {NativeModules} from 'react-native'
-import {isIOS} from "my-rn-base-utils";
+import {isIOS, RNCommonUtils} from "my-rn-base-utils";
 
 let IAPUtilsNative = NativeModules.IAPUtils;
 /*
@@ -34,5 +34,8 @@ export default {
         if (isIOS)
             return IAPUtilsNative.restoreProduct();
         return undefined
+    },
+    setVipUser() {
+        return RNCommonUtils.setVIPUser();
     }
 }

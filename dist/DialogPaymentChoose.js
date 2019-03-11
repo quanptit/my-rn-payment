@@ -3,7 +3,6 @@ import IAPUtils from './IAPUtils';
 import DialogTheoCao from './DialogTheoCao';
 import { Button, ButtonModel, DialogUtils, PopupDialog, StyleUtils, TextCustom, Toast } from "my-rn-base-component";
 import { isEmpty, isIOS, sendError } from "my-rn-base-utils";
-import { UserUtils } from "react-native-login";
 import { getStringsCommon } from "my-rn-common-resource";
 const s = StyleUtils.getAllStyle();
 export class DialogPaymentChoose extends Component {
@@ -35,11 +34,12 @@ export class DialogPaymentChoose extends Component {
         }
     }
     async _setVipUser() {
-        await UserUtils.setVipUser();
         Toast.showLongBottom(getStringsCommon().success);
         this.callbackUpdateVip();
     }
     callbackUpdateVip() {
+        // noinspection JSIgnoredPromiseFromCall
+        IAPUtils.setVipUser();
         this.props.callbackUpdateVip && this.props.callbackUpdateVip();
         DialogUtils.hideDialog();
         DialogUtils.showInfoDialog(null, getStringsCommon().success_need_restart);
