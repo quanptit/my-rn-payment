@@ -67,7 +67,7 @@ export default class DialogTheoCao extends Component<Props> {
     // }
     //
     // render() {
-    //     if (!isIOS) {
+    //     if (!isIOS()) {
     //         return null;
     //     }
     //     return (

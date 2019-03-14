@@ -28,7 +28,7 @@ export default {
         return IAPUtilsNative.purchaseProduct(productId, IAP_LICENSE_KEY);
     },
     restoreProduct() {
-        if (isIOS)
+        if (isIOS())
             return IAPUtilsNative.restoreProduct();
         return undefined;
     },

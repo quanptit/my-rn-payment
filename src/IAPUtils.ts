@@ -31,7 +31,7 @@ export default {
     },
 
     restoreProduct(): Promise<boolean> {
-        if (isIOS)
+        if (isIOS())
             return IAPUtilsNative.restoreProduct();
         return undefined
     },
