@@ -1,7 +1,6 @@
 import { Component } from 'react';
 interface Props {
     callbackUpdateVip: () => void;
-    iosBundleID: string;
     IAP_LICENSE_KEY: string;
 }
 export declare class DialogPaymentChoose extends Component<Props> {

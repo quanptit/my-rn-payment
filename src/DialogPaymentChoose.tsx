@@ -7,7 +7,6 @@ import {getStringsCommon} from "my-rn-common-resource";
 
 interface Props {
     callbackUpdateVip: () => void // Cần gọi user.setVipUser nếu có login
-    iosBundleID: string
     IAP_LICENSE_KEY: string
 }
 
