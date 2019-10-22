@@ -36,18 +36,23 @@ public class RNIAPModule extends ReactContextBaseJavaModule implements ActivityE
 
     @Override
     public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
-        if (requestCode == 186) {
-            if (promise == null) {
-                L.d("ERROR: Promise null ==========");
-                return;
+        try {
+            if (requestCode == 186) {
+                if (promise == null) {
+                    L.d("ERROR: Promise null ==========");
+                    return;
+                }
+                if (resultCode == Activity.RESULT_OK) {
+                    promise.resolve(true);
+                } else {
+                    if (data != null && data.hasExtra("DATA"))
+                        promise.reject("0", data.getStringExtra("DATA"));
+                    else
+                        promise.reject("0", "");
+                }
             }
-            if (resultCode == Activity.RESULT_OK) {
-                promise.resolve(true);
-            } else {
-                if (data.hasExtra("DATA"))
-                    promise.reject("0", data.getStringExtra("DATA"));
-                promise.reject("0", "");
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

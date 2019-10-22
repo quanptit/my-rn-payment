@@ -5,21 +5,27 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "install_npm": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ads"
+    "react-native"
   ],
   "author": "Quan Trinh Van",
-  "license": "Quan Trinh Van",
-  "nativePackage": true,
-  "dependencies": {},
-  "devDependencies": {
-    "my-rn-base-component": "git+https://gitlab.com/react-native-my-libs/my-rn-base-component.git",
-    "my-rn-base-utils": "git+https://gitlab.com/react-native-my-libs/my-rn-base-utils.git",
-    "react-native-login": "git+https://gitlab.com/react-native-my-libs/react-native-login.git",
-    "my-rn-common-resource": "git+https://gitlab.com/react-native-my-libs/my-rn-common-resource.git"
+  "license": "ISC",
+  "homepage": "https://github.com/quanptit/my-rn-payment",
+  "bugs": "https://github.com/quanptit/my-rn-payment/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quanptit/my-rn-payment.git"
   },
+  "nativePackage": true,
+  "dependencies": {
+    "my-rn-base-component": "^1.0.4",
+    "my-rn-common-resource": "^1.0.1"
+  },
+  "devDependencies": {},
   "peerDependencies": {
+    "my-rn-base-utils": "^2.0.0"
   }
 }
