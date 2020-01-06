@@ -1,12 +1,12 @@
 {
   "name": "my-rn-payment",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "payment module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "install_npm": "yarn install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "npm_publish": "npm publish"
   },
   "keywords": [
     "react-native"
@@ -21,11 +21,8 @@
   },
   "nativePackage": true,
   "dependencies": {
-    "my-rn-base-component": "^1.0.4",
-    "my-rn-common-resource": "^1.0.1"
   },
   "devDependencies": {},
   "peerDependencies": {
-    "my-rn-base-utils": "^2.0.0"
   }
 }
