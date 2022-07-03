@@ -3,7 +3,7 @@
 
 ##### Thêm Vào package.json
 ```
-"my-rn-payment": "^1.0.2",
+"my-rn-payment": "^2.0.0",
 ```
 
 Chạy  lệnh sau
